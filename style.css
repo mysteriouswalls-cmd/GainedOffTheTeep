@@ -101,7 +101,7 @@ body {
     border-radius: 10px;
     cursor:pointer;
 }
-.popup .form .form-element a {
+.popup .form .form-element :a {
     display:block;
     text-align:right;
     font-size: 15px;
