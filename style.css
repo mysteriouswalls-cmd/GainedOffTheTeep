@@ -54,7 +54,7 @@ body {
     background: #888;
     color:#eee;
     text-align: center;
-    line: height 15px;
+    line-height: 15px;
     border-radius: 15px;
     cursor:pointer;
 }
