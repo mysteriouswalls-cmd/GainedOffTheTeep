@@ -14,14 +14,14 @@ body {
     color: blue;
 }
 */
-.login{
+.center{
     position:absolute;
     top: 50%;
     left: 50%;
     transform:translate(-50%,-50%);
 }
 
-.login button {
+.center button {
     padding: 10px 20px;
     font: size 15px;
     font-weight: 600;
@@ -63,5 +63,5 @@ body {
     text-align:center;
     color:#222;
     margin:10px 0px 20px;
-    font-size: 250px;
+    font-size: 50px;
 }
