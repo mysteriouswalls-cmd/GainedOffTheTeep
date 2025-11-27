@@ -22,7 +22,7 @@ window.supabase = supabase;
 const googleBtn = document.getElementById("google-login");
   googleBtn.addEventListener("click", async () => {
     const { data, error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
+       provider: "google",
       options: {
         redirectTo: window.location.href // redirect back to current page
       }
@@ -48,4 +48,3 @@ const googleBtn = document.getElementById("google-login");
       googleBtn.style.display = "block";
     }
   });
-});
