@@ -7,7 +7,7 @@ document.querySelector(".popup .close-btn").addEventListener("click",function(){
     document.querySelector(".popup").classList.remove("active");
 });
 
-import {createClient } from "https://esm.sh/@supabase/supabase-js";
+/* import {createClient } from "https://esm.sh/@supabase/supabase-js";
 
 const supabase = createClient (
     "https://oxidikugtxyakkxktkoa.supabase.co",
@@ -20,15 +20,17 @@ window.supabase = supabase;
 // fix below??? 
 
 const googleBtn = document.getElementById("google-login");
-  googleBtn.addEventListener("click", async () => {
-    const { data, error } = await supabase.auth.signInWithOAuth({
-       provider: "google",
-      options: {
-        redirectTo: window.location.href // redirect back to current page
-      }
-    });
+  document.addEventListener("DOMContentLoaded", function() { 
+    googleBtn.addEventListener("click", async () => {
+      const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: window.location.href // redirect back to current page
+        }
+      });
 
-    if (error) console.error("OAuth login error:", error);
+      if (error) console.error("OAuth login error:", error);
+    });
   });
 
   // Logout
@@ -48,3 +50,4 @@ const googleBtn = document.getElementById("google-login");
       googleBtn.style.display = "block";
     }
   });
+  */
