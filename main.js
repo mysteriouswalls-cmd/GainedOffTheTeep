@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded",function () {
 
   document.getElementById("google-login").addEventListener("click", async function () {
     console.log("Google login clicked");
+  
 
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded",function () {
         redirectTo: window.location.origin // redirect back to home page
       }
     });
+  });
 });
 
 
